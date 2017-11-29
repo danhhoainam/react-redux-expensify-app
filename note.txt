@@ -1,0 +1,34 @@
+1. and operator: true && <p>
+2. ternary operator: true ? do : not do
+3. var, const, let --> block scoping
+4. ReactDOM.render(jsx, domObject);
+5. Arrow function: (x, y) => x * y;
+6. console.log(arguments)
+7. Arrow function: take care of its scoping: this, that
+8. cities.forEach --> iterate through an array
+9. cities.map --> transform elements of an array to new array
+10. events and attributes
+11. JSX does not have data binding
+12. Form submit with e.preventDefault()
+13. falsie value: !!''
+14. method binding: bind() --> Google: mdn bind
+15. use concat method
+16. setState
+17. defaultProps
+18. stateless functional component
+19. React Dev Tool: https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related
+20. ({}) --> object
+21. filter
+22. componentDidMount, componentDidUpdate, componentWillUnmount --> class component (component lifecycle)
+23. prevProps, prevState --> componentDidUpdate
+24. localStorage --> key, value (string data)
+
+25. path.join
+26. __dirname
+27. ES6 import export
+28. named export <> default export
+29. SASS: __ children ; -- another version
+
+===================== 
+1. Run live server: live-server public
+2. Run babel: babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch

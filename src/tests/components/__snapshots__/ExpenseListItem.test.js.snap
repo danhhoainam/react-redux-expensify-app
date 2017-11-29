@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseListItem with default data 1`] = `
+<div>
+  <h3>
+    <Link
+      replace={false}
+      to="/edit/1"
+    >
+      test
+    </Link>
+  </h3>
+  <p>
+    150
+     -  
+    0
+  </p>
+</div>
+`;
