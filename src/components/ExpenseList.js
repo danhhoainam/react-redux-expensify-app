@@ -5,7 +5,6 @@ import selectExpenses from './../selectors/expenses';
 
 export const ExpenseList = (props) => (
     <div>
-        Expense List
         {
             props.expenses && props.expenses.length === 0 ? 
             (

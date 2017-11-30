@@ -2,7 +2,6 @@
 
 exports[`should render ExpenseList with empty array 1`] = `
 <div>
-  Expense List
   <p>
     No expenses
   </p>
@@ -11,7 +10,6 @@ exports[`should render ExpenseList with empty array 1`] = `
 
 exports[`should render ExpenseList with expenses 1`] = `
 <div>
-  Expense List
   <ExpenseListItem
     amount={150}
     createAt={0}
