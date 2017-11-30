@@ -5,6 +5,8 @@ git status - View the changes to your project code
 git add - Add files to staging area  
 git commit - Creates a new commit with files from staging area  
 git log - View recent commits  
+git push  
+git push -u origin master  
 
 # Heroku commands
 heroku --version
@@ -22,7 +24,7 @@ Thanks to him, this course is super good for someone beginning to learn React & 
 It helps me to understand about React & Redux clearly.  
 
 # What I learnt
-Some basic knowledge about  
+Some basic knowledge about:  
 React  
 Redux  
 React Router  
@@ -31,3 +33,14 @@ Jest & Enzyme
 Git  
 Heroku  
 Firebase  
+
+# yarn scripts
+yarn run dev-server  
+yarn run build:prod  
+yarn run build:dev  
+yarn test -- --watchAll  
+yarn run start  
+yarn install  
+yarn install --production  
+
+# installation
