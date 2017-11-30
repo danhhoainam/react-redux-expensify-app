@@ -6,6 +6,15 @@ git add - Add files to staging area
 git commit - Creates a new commit with files from staging area  
 git log - View recent commits  
 
+# Heroku commands
+heroku --version
+heroku login  
+heroku create react-redux-expensify-namndh  
+git push heroku master  
+heroku open  
+heroku logs  
+
+
 # Project
 I learnt this project from Udemy.   
 The course name is: The Complete React Web Developer Course (with Redux) - Author: Andrew Mead.  

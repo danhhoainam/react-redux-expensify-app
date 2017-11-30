@@ -18,8 +18,8 @@ module.exports = (env) => {
         output: {
             // path is a lib to join directory
             // here we join absolute directory of our app to public folder
-            // compress all js to bundle.js file in public folder
-            path: path.join(__dirname, 'public'),
+            // compress all js to bundle.js file in public/dist folder
+            path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
         },
 
@@ -68,7 +68,8 @@ module.exports = (env) => {
             contentBase: path.join(__dirname, 'public'),
             historyApiFallback: true,
             compress: true,
-            port: 9000
+            port: 3001,
+            publicPath: '/dist/'
         }
     };
 };
