@@ -5,3 +5,5 @@ public/styles.css
 public/styles.css.map
 public/dist/
 coverage/
+.env.test
+.env.development

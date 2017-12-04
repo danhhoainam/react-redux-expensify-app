@@ -1,8 +1,23 @@
 // lib to join directories
 const path = require('path');
+
+// define plugin as an object
+// naming it like a variable
+const webpack = require('webpack');
+
 // Extract CSS files into seperated files
 // Make sure the style files load first, then JS
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+// process.env.NODE_ENV
+// if production server does not have this param
+// default is development
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+if (process.env.NODE_ENV === 'test') {
+    require('dotenv').config({ path: '.env.test' });
+} else if (process.env.NODE_ENV === 'development') {
+    require('dotenv').config({ path: '.env.development' });
+}
 
 // export function
 // advantage to access some parameter like: environments
@@ -55,7 +70,16 @@ module.exports = (env) => {
         },
 
         plugins: [
-            CSSExtract
+            CSSExtract,
+            // replace string in project with specific values (for development)
+            new webpack.DefinePlugin({
+                'process.env.FIREBASE_API_KEY': JSON.stringify(process.env.FIREBASE_API_KEY),
+                'process.env.FIREBASE_AUTH_DOMAIN': JSON.stringify(process.env.FIREBASE_AUTH_DOMAIN),
+                'process.env.FIREBASE_DATABASE_URL': JSON.stringify(process.env.FIREBASE_DATABASE_URL),
+                'process.env.FIREBASE_PROJECT_ID': JSON.stringify(process.env.FIREBASE_PROJECT_ID),
+                'process.env.FIREBASE_STORAGE_BUCKET': JSON.stringify(process.env.FIREBASE_STORAGE_BUCKET),
+                'process.env.FIREBASE_MESSAGING_SENDER_ID': JSON.stringify(process.env.FIREBASE_MESSAGING_SENDER_ID)
+            })
         ],
 
         // devtool: expose js file to chrome devtool view
