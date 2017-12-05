@@ -1,0 +1,30 @@
+.box-layout {
+    align-items: center;
+    /* set item is flex box */
+    display: flex;
+    justify-content: center;
+    /* set image for the background */
+    background: url('/images/bg2.jpg');
+    /* set viewport 100% height */
+    height: 100vh;
+    /* set viewport 100% width */
+    width: 100vw;
+    /* set image always cover the container */
+    background-size: cover;
+}
+
+.box-layout__box {
+    /* set transparent of background is 15% */
+    background: fade-out(white, .50);
+    /* set round corner border */
+    border-radius: 3px;
+    /* top bottom l-size, right left m-size */
+    padding: $l-size $m-size;
+    text-align: center;
+    width: 27rem;
+}
+
+.box-layout__title {
+    margin: 0 0 $m-size 0;
+    line-height: 1;
+}

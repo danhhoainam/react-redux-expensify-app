@@ -1,38 +1,88 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpenseList with empty array 1`] = `
-<div>
-  <p>
-    No expenses
-  </p>
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <p>
+      No expenses
+    </p>
+  </div>
 </div>
 `;
 
 exports[`should render ExpenseList with expenses 1`] = `
-<div>
-  <ExpenseListItem
-    amount={150}
-    createAt={0}
-    description="test"
-    id="1"
-    key="1"
-    note="test note"
-  />
-  <ExpenseListItem
-    amount={152220}
-    createAt={-345600000}
-    description="Buy"
-    id="2"
-    key="2"
-    note="test buy"
-  />
-  <ExpenseListItem
-    amount={3212}
-    createAt={345600000}
-    description="Credit"
-    id="3"
-    key="3"
-    note="test credit"
-  />
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <ExpenseListItem
+      amount={150}
+      createAt={0}
+      description="test"
+      id="1"
+      key="1"
+      note="test note"
+    />
+    <ExpenseListItem
+      amount={152220}
+      createAt={-345600000}
+      description="Buy"
+      id="2"
+      key="2"
+      note="test buy"
+    />
+    <ExpenseListItem
+      amount={3212}
+      createAt={345600000}
+      description="Credit"
+      id="3"
+      key="3"
+      note="test credit"
+    />
+  </div>
 </div>
 `;

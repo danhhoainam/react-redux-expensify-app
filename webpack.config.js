@@ -29,7 +29,8 @@ module.exports = (env) => {
 
     return {
         // entry -> output
-        entry: './src/app.js',
+        // setup babel-polyfill first for cross-browser running
+        entry: ['babel-polyfill', './src/app.js'],
         output: {
             // path is a lib to join directory
             // here we join absolute directory of our app to public folder

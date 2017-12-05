@@ -1,11 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should correctly render LoginPage 1`] = `
-<div>
-  <button
-    onClick={[Function]}
+<div
+  className="box-layout"
+>
+  <div
+    className="box-layout__box"
   >
-    Login
-  </button>
+    <h1
+      className="box-layout__title"
+    >
+      ReactJS App
+    </h1>
+    <p>
+      This is my first online ReactJS application
+    </p>
+    <div>
+      <GoogleButton
+        disabled={false}
+        label="Sign in with Google"
+        onClick={[Function]}
+        type="dark"
+      />
+    </div>
+  </div>
 </div>
 `;

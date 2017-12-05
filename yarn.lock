@@ -5228,6 +5228,12 @@ react-dom@16.2.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
+react-google-button@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/react-google-button/-/react-google-button-0.4.0.tgz#e2981318336ee15014dc090c845e9b4ed14e8973"
+  dependencies:
+    prop-types "^15.5.8"
+
 react-modal@^3.1.4:
   version "3.1.6"
   resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.1.6.tgz#82e63f1ec86b80e242518250d066ee37fa035f8a"

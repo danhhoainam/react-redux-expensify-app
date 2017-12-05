@@ -1,0 +1,20 @@
+.header {
+    background: $dark-blue;
+}
+
+.header__title {
+    color: white;
+    /* remove underline */
+    text-decoration: none;
+    h1 {
+        margin: 0;
+    }
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding top and bottom s-size */
+    padding: $s-size 0;
+}
